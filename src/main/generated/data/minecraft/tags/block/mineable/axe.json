@@ -1,0 +1,30 @@
+{
+  "values": [
+    "kaismod:kaigrove_log",
+    "kaismod:stripped_kaigrove_log",
+    "kaismod:kaigrove_wood",
+    "kaismod:stripped_kaigrove_wood",
+    "kaismod:kaigrove_planks",
+    "kaismod:kaigrove_button",
+    "kaismod:kaigrove_pressure_plate",
+    "kaismod:kaigrove_slab",
+    "kaismod:kaigrove_fence",
+    "kaismod:kaigrove_fence_gate",
+    "kaismod:kaigrove_door",
+    "kaismod:kaigrove_trapdoor",
+    "kaismod:kaigrove_stairs",
+    "kaismod:light_mangrove_log",
+    "kaismod:stripped_light_mangrove_log",
+    "kaismod:light_mangrove_wood",
+    "kaismod:stripped_light_mangrove_wood",
+    "kaismod:light_mangrove_planks",
+    "kaismod:light_mangrove_button",
+    "kaismod:light_mangrove_pressure_plate",
+    "kaismod:light_mangrove_slab",
+    "kaismod:light_mangrove_fence",
+    "kaismod:light_mangrove_fence_gate",
+    "kaismod:light_mangrove_door",
+    "kaismod:light_mangrove_trapdoor",
+    "kaismod:light_mangrove_stairs"
+  ]
+}

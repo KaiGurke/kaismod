@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kaismod:block/kaigrove_slab"
+    },
+    "type=double": {
+      "model": "kaismod:block/kaigrove_planks"
+    },
+    "type=top": {
+      "model": "kaismod:block/kaigrove_slab_top"
+    }
+  }
+}

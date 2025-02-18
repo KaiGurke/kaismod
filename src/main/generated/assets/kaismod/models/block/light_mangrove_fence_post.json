@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "kaismod:block/light_mangrove_planks"
+  }
+}

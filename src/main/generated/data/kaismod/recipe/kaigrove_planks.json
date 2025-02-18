@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "kaismod:kaigrove_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kaismod:kaigrove_planks"
+  }
+}

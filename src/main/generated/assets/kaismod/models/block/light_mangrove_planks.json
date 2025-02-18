@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kaismod:block/light_mangrove_planks"
+  }
+}

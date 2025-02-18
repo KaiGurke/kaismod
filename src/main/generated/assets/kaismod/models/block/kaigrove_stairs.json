@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "kaismod:block/kaigrove_planks",
+    "side": "kaismod:block/kaigrove_planks",
+    "top": "kaismod:block/kaigrove_planks"
+  }
+}

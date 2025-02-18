@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kaismod:block/kaigrove_log",
+    "side": "kaismod:block/kaigrove_log"
+  }
+}

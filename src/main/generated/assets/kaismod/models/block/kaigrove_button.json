@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "kaismod:block/kaigrove_planks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kaigrove_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kaismod:kaigrove_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kaismod:kaigrove_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kaigrove_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kaismod:kaigrove_planks"
+    ]
+  }
+}

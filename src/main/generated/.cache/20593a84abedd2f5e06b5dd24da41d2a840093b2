@@ -1,0 +1,15 @@
+// 1.21.4	-999999999-01-01T00:00:00	KaisMod/Tags for minecraft:block
+10f078a31aa21fa2e20b4e89cf6cfc576d6265e8 data/minecraft/tags/block/all_hanging_signs.json
+f570aa4d48838758b9a1edbdff925c42cba53ccb data/minecraft/tags/block/all_signs.json
+011389e9c28638e50d231d4e463d1cfe93e92cde data/minecraft/tags/block/fence_gates.json
+8cb88e5d72b0cf4ee194b2c78783f14f3edc7122 data/minecraft/tags/block/logs.json
+8cb88e5d72b0cf4ee194b2c78783f14f3edc7122 data/minecraft/tags/block/logs_that_burn.json
+693fb6ae411fe132c34974bdd7b6932e7cf83c17 data/minecraft/tags/block/mineable/axe.json
+349f21bb4a362b3c2a46d609d45f1eb998d614e5 data/minecraft/tags/block/planks.json
+995c0a08fdf80e2404e41ae790c10a5dec354185 data/minecraft/tags/block/wooden_buttons.json
+0b34225a8e76fe07f5e458f16bc636743e2f51e6 data/minecraft/tags/block/wooden_doors.json
+e1e2c4a2d728564d17bdcb8ec553c189378c27f5 data/minecraft/tags/block/wooden_fences.json
+a1641f5856001ef54705b7b8bd375dad161f66e7 data/minecraft/tags/block/wooden_pressure_plates.json
+e1652ef0bc81112398b588847fcc53370f57105d data/minecraft/tags/block/wooden_slabs.json
+bf9b427234830ea1e746f310659539ff84272085 data/minecraft/tags/block/wooden_stairs.json
+e7f1b4e8df225dde0975c8af65f89b4a9ead6bd1 data/minecraft/tags/block/wooden_trapdoors.json

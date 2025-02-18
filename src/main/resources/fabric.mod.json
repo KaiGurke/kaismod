@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "kaismod",
+	"version": "${version}",
+	"name": "KaisMod",
+	"description": "KaisMod is cool i guess lol.",
+	"authors": [
+		"KaiGurke!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/kaismod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kaigurke.kaismod.KaisMod"
+		],
+		"fabric-datagen": [
+			"com.kaigurke.kaismod.KaisModDataGenerator"
+		],
+		"client": [
+			"com.kaigurke.kaismod.KaisModClient"
+		]
+	},
+	"mixins": [
+		"kaismod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

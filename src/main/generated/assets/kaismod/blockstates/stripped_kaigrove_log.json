@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "kaismod:block/stripped_kaigrove_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "kaismod:block/stripped_kaigrove_log"
+    },
+    "axis=z": {
+      "model": "kaismod:block/stripped_kaigrove_log_horizontal",
+      "x": 90
+    }
+  }
+}

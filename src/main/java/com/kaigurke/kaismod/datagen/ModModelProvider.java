@@ -41,8 +41,8 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerDoor(ModBlocks.KAIGROVE_DOOR_KEY);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.KAIGROVE_TRAPDOOR_KEY);
         
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PLACEHOLDER_MUD_BRICKS_KEY);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIMESTONE_KEY);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLACEHOLDER_MUD_BRICKS_KEY);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIMESTONE_KEY);
     }
 
     @Override

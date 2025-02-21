@@ -494,7 +494,7 @@ public class ModBlocks {
 	);
 
 	public static final Block PLACEHOLDER_MUD_BRICKS_KEY = register(
-		new Block(AbstractBlock.Settings.copy(Blocks.BRICKS).registryKey(PLACEHOLDER_MUD_BRICKS).sounds(BlockSoundGroup.STONE)),
+		new Block(AbstractBlock.Settings.copy(Blocks.MUD_BRICKS).registryKey(PLACEHOLDER_MUD_BRICKS).sounds(BlockSoundGroup.MUD_BRICKS)),
 		PLACEHOLDER_MUD_BRICKS,
 		true
 	);

@@ -31,5 +31,7 @@
     "item.kaismod.light_mangrove_button" : "Light Mangrove Button",
     "item.kaismod.light_mangrove_pressure_plate" : "Light Mangrove Pressure Plate",
     "item.kaismod.light_mangrove_sign" : "Light Mangrove Sign",
-    "item.kaismod.light_mangrove_hanging_sign" : "Light Mangrove Hanging Sign"
+    "item.kaismod.light_mangrove_hanging_sign" : "Light Mangrove Hanging Sign",
+    "item.kaismod.limestone" : "Limestone",
+    "item.kaismod.placeholder_mud_bricks" : "Placeholder Mud Bricks"
 }

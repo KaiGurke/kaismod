@@ -19,6 +19,8 @@ import net.minecraft.block.SignBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.block.WallHangingSignBlock;
+import net.minecraft.block.WallSignBlock;
 import net.minecraft.block.WoodType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -200,6 +202,18 @@ public class ModBlocks {
 			true
 	);
 
+	// Kaigrove Wall Sign
+	public static final RegistryKey<Block> KAIGROVE_WALL_SIGN = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "kaigrove_wall_sign")
+	);
+
+	public static final Block KAIGROVE_WALL_SIGN_KEY = register(
+		new WallSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_SIGN).registryKey(KAIGROVE_WALL_SIGN).sounds(BlockSoundGroup.WOOD)),
+		KAIGROVE_WALL_SIGN,
+		false
+	);
+
 	// Kaigrove Hanging Sign
 	public static final RegistryKey<Block> KAIGROVE_HANGING_SIGN = RegistryKey.of(
 		RegistryKeys.BLOCK,
@@ -212,6 +226,17 @@ public class ModBlocks {
 			true
 	);
 
+	// Kaigrove Wall Hanging Sign
+	public static final RegistryKey<Block> KAIGROVE_WALL_HANGING_SIGN = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "kaigrove_wall_hanging_sign")
+	);
+
+	public static final Block KAIGROVE_WALL_HANGING_SIGN_KEY = register(
+		new WallHangingSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_HANGING_SIGN).registryKey(KAIGROVE_WALL_HANGING_SIGN).sounds(BlockSoundGroup.WOOD)),
+		KAIGROVE_WALL_HANGING_SIGN,
+		false
+	);
 	// Kaigrove Wood
 	public static final RegistryKey<Block> KAIGROVE_WOOD = RegistryKey.of(
 		RegistryKeys.BLOCK,
@@ -242,7 +267,6 @@ public class ModBlocks {
 	//---------------------------------------------------------------------------------------------------------------------------
 	// ---------------------Light Mangrove Blocks / Old Mangrove Blocks from Minecraft LIVE--------------------------------------
 	//---------------------------------------------------------------------------------------------------------------------------
-
 	// Light Mangrove Planks
 	public static final RegistryKey<Block> LIGHT_MANGROVE_PLANKS = RegistryKey.of(
 		RegistryKeys.BLOCK,
@@ -391,6 +415,17 @@ public class ModBlocks {
 			true
 	);
 
+	// Light Mangrove Wall Sign
+	public static final RegistryKey<Block> LIGHT_MANGROVE_WALL_SIGN = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "light_mangrove_wall_sign")
+	);
+	public static final Block LIGHT_MANGROVE_WALL_SIGN_KEY = register(
+		new WallSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_SIGN).registryKey(LIGHT_MANGROVE_WALL_SIGN).sounds(BlockSoundGroup.WOOD)),
+		LIGHT_MANGROVE_WALL_SIGN,
+		false
+	);
+
 	// Light Mangrove Hanging Sign
 	public static final RegistryKey<Block> LIGHT_MANGROVE_HANGING_SIGN = RegistryKey.of(
 		RegistryKeys.BLOCK,
@@ -403,6 +438,17 @@ public class ModBlocks {
 			true
 	);
 
+	// Light Mangrove Wall Hanging Sign
+	public static final RegistryKey<Block> LIGHT_MANGROVE_WALL_HANGING_SIGN = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "light_mangrove_wall_hanging_sign")
+	);
+
+	public static final Block LIGHT_MANGROVE_WALL_HANGING_SIGN_KEY = register(
+		new WallHangingSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_HANGING_SIGN).registryKey(LIGHT_MANGROVE_WALL_HANGING_SIGN).sounds(BlockSoundGroup.WOOD)),
+		LIGHT_MANGROVE_WALL_HANGING_SIGN,
+		false
+	);
 	// Light Mangrove Wood
 	public static final RegistryKey<Block> LIGHT_MANGROVE_WOOD = RegistryKey.of(
 		RegistryKeys.BLOCK,
@@ -427,7 +473,31 @@ public class ModBlocks {
 			true
 	);
 
+	// ----------------
+	// 	Stone Types
+	// ----------------
 
+	public static final RegistryKey<Block> LIMESTONE = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "limestone")
+	);
+
+	public static final Block LIMESTONE_KEY = register(
+		new Block(AbstractBlock.Settings.copy(Blocks.STONE).registryKey(LIMESTONE).sounds(BlockSoundGroup.STONE)),
+		LIMESTONE,
+		true
+	);
+
+	public static final RegistryKey<Block> PLACEHOLDER_MUD_BRICKS = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "placeholder_mud_bricks")
+	);
+
+	public static final Block PLACEHOLDER_MUD_BRICKS_KEY = register(
+		new Block(AbstractBlock.Settings.copy(Blocks.BRICKS).registryKey(PLACEHOLDER_MUD_BRICKS).sounds(BlockSoundGroup.STONE)),
+		PLACEHOLDER_MUD_BRICKS,
+		true
+	);
 
 
 
@@ -455,7 +525,6 @@ public class ModBlocks {
 			entries.add(KAIGROVE_PRESSURE_PLATE_KEY.asItem());
 			entries.add(KAIGROVE_BUTTON_KEY.asItem());
 			
-			
 			// Light Mangrove
 			entries.add(LIGHT_MANGROVE_LOG_KEY.asItem());
 			entries.add(STRIPPED_LIGHT_MANGROVE_LOG_KEY.asItem());
@@ -470,6 +539,10 @@ public class ModBlocks {
 			entries.add(LIGHT_MANGROVE_TRAPDOOR_KEY.asItem());
 			entries.add(LIGHT_MANGROVE_PRESSURE_PLATE_KEY.asItem());
 			entries.add(LIGHT_MANGROVE_BUTTON_KEY.asItem());
+
+			// Other
+			entries.add(LIMESTONE_KEY.asItem());
+			entries.add(PLACEHOLDER_MUD_BRICKS_KEY.asItem());
         });
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {

@@ -18,8 +18,6 @@ public class ModModelProvider extends FabricModelProvider{
 
         blockStateModelGenerator.registerLog(ModBlocks.LIGHT_MANGROVE_LOG_KEY).log(ModBlocks.LIGHT_MANGROVE_LOG_KEY).wood(ModBlocks.LIGHT_MANGROVE_WOOD_KEY);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_LIGHT_MANGROVE_LOG_KEY).log(ModBlocks.STRIPPED_LIGHT_MANGROVE_LOG_KEY).wood(ModBlocks.STRIPPED_LIGHT_MANGROVE_WOOD_KEY);
-
-
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIGHT_MANGROVE_PLANKS_KEY)
         .stairs(ModBlocks.LIGHT_MANGROVE_STAIRS_KEY)
         .slab(ModBlocks.LIGHT_MANGROVE_SLAB_KEY)
@@ -27,7 +25,6 @@ public class ModModelProvider extends FabricModelProvider{
         .fenceGate(ModBlocks.LIGHT_MANGROVE_FENCE_GATE_KEY)
         .button(ModBlocks.LIGHT_MANGROVE_BUTTON_KEY)
         .pressurePlate(ModBlocks.LIGHT_MANGROVE_PRESSURE_PLATE_KEY);
-        
         blockStateModelGenerator.registerDoor(ModBlocks.LIGHT_MANGROVE_DOOR_KEY);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.LIGHT_MANGROVE_TRAPDOOR_KEY);
 
@@ -41,11 +38,11 @@ public class ModModelProvider extends FabricModelProvider{
         .fenceGate(ModBlocks.KAIGROVE_FENCE_GATE_KEY)
         .button(ModBlocks.KAIGROVE_BUTTON_KEY)
         .pressurePlate(ModBlocks.KAIGROVE_PRESSURE_PLATE_KEY);
-
-
         blockStateModelGenerator.registerDoor(ModBlocks.KAIGROVE_DOOR_KEY);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.KAIGROVE_TRAPDOOR_KEY);
         
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PLACEHOLDER_MUD_BRICKS_KEY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LIMESTONE_KEY);
     }
 
     @Override

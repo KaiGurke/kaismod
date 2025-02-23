@@ -40,9 +40,14 @@ public class ModModelProvider extends FabricModelProvider{
         .pressurePlate(ModBlocks.KAIGROVE_PRESSURE_PLATE_KEY);
         blockStateModelGenerator.registerDoor(ModBlocks.KAIGROVE_DOOR_KEY);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.KAIGROVE_TRAPDOOR_KEY);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAKURA_PLANKS_KEY);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDER_PLANKS_KEY);
         
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLACEHOLDER_MUD_BRICKS_KEY);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIMESTONE_KEY);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROSE_WOOL_KEY);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPRING_GREEN_WOOL_KEY);
     }
 
     @Override

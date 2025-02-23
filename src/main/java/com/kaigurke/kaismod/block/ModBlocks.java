@@ -473,6 +473,34 @@ public class ModBlocks {
 			true
 	);
 
+	// Sakura
+
+	// Sakura Planks
+	public static final RegistryKey<Block> SAKURA_PLANKS = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_planks")
+	);
+
+	public static final Block SAKURA_PLANKS_KEY = register(
+		    new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).registryKey(SAKURA_PLANKS).sounds(BlockSoundGroup.WOOD)),
+		    SAKURA_PLANKS,
+		    true
+	);
+
+	// Lavender
+
+	// Lavender Planks
+	public static final RegistryKey<Block> LAVENDER_PLANKS = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "lavender_planks")
+	);
+
+	public static final Block LAVENDER_PLANKS_KEY = register(
+		    new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).registryKey(LAVENDER_PLANKS).sounds(BlockSoundGroup.WOOD)),
+		    LAVENDER_PLANKS,
+		    true
+	);
+
 	// ----------------
 	// 	Stone Types
 	// ----------------
@@ -499,6 +527,31 @@ public class ModBlocks {
 		true
 	);
 
+	// ----------------
+	// 	OTHER BLOCKS
+	// ----------------
+
+	public static final RegistryKey<Block> SPRING_GREEN_WOOL = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "spring_green_wool")
+	);
+
+	public static final Block SPRING_GREEN_WOOL_KEY = register(
+		new Block(AbstractBlock.Settings.copy(Blocks.GREEN_WOOL).registryKey(SPRING_GREEN_WOOL).sounds(BlockSoundGroup.WOOL)),
+		SPRING_GREEN_WOOL,
+		true
+	);
+
+	public static final RegistryKey<Block> ROSE_WOOL = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "spring_green_wool")
+	);
+
+	public static final Block ROSE_WOOL_KEY = register(
+		new Block(AbstractBlock.Settings.copy(Blocks.GREEN_WOOL).registryKey(ROSE_WOOL).sounds(BlockSoundGroup.WOOL)),
+		ROSE_WOOL,
+		true
+	);
 
 
     public static void initialize() {
@@ -540,6 +593,12 @@ public class ModBlocks {
 			entries.add(LIGHT_MANGROVE_PRESSURE_PLATE_KEY.asItem());
 			entries.add(LIGHT_MANGROVE_BUTTON_KEY.asItem());
 
+			// Sakura
+			entries.add(SAKURA_PLANKS_KEY.asItem());
+			
+			// Lavender
+			entries.add(LAVENDER_PLANKS_KEY.asItem());
+
 			// Other
 			entries.add(LIMESTONE_KEY.asItem());
 			entries.add(PLACEHOLDER_MUD_BRICKS_KEY.asItem());
@@ -551,6 +610,11 @@ public class ModBlocks {
 			entries.add(KAIGROVE_HANGING_SIGN_KEY.asItem());
 			entries.add(LIGHT_MANGROVE_HANGING_SIGN_KEY.asItem());
         });
+
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
+			entries.add(SPRING_GREEN_WOOL_KEY.asItem());
+			entries.add(ROSE_WOOL_KEY.asItem());
+		});
     }
 
 }

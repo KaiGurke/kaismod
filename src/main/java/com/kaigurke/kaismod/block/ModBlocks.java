@@ -482,7 +482,7 @@ public class ModBlocks {
 	);
 
 	public static final Block SAKURA_PLANKS_KEY = register(
-		    new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).registryKey(SAKURA_PLANKS).sounds(BlockSoundGroup.WOOD)),
+		    new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).registryKey(SAKURA_PLANKS).sounds(BlockSoundGroup.CHERRY_WOOD)),
 		    SAKURA_PLANKS,
 		    true
 	);
@@ -496,7 +496,7 @@ public class ModBlocks {
 	);
 
 	public static final Block LAVENDER_PLANKS_KEY = register(
-		    new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).registryKey(LAVENDER_PLANKS).sounds(BlockSoundGroup.WOOD)),
+		    new Block(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS).registryKey(LAVENDER_PLANKS).sounds(BlockSoundGroup.CHERRY_WOOD)),
 		    LAVENDER_PLANKS,
 		    true
 	);
@@ -544,7 +544,7 @@ public class ModBlocks {
 
 	public static final RegistryKey<Block> ROSE_WOOL = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "spring_green_wool")
+		Identifier.of(KaisMod.MOD_ID, "rose_wool")
 	);
 
 	public static final Block ROSE_WOOL_KEY = register(

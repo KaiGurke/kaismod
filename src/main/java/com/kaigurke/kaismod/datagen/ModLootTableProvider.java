@@ -38,5 +38,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LIGHT_MANGROVE_STAIRS_KEY);
         addDrop(ModBlocks.LIGHT_MANGROVE_SIGN_KEY);
         addDrop(ModBlocks.LIGHT_MANGROVE_HANGING_SIGN_KEY);
+        addDrop(ModBlocks.LIGHT_MANGROVE_PLANKS_KEY);
+        addDrop(ModBlocks.LIGHT_MANGROVE_LOG_KEY);
+        addDrop(ModBlocks.STRIPPED_LIGHT_MANGROVE_LOG_KEY);
+        addDrop(ModBlocks.LIGHT_MANGROVE_WOOD_KEY);
+        addDrop(ModBlocks.LIMESTONE_KEY);
+        addDrop(ModBlocks.PLACEHOLDER_MUD_BRICKS_KEY);
+        addDrop(ModBlocks.ROSE_WOOL_KEY);
+        addDrop(ModBlocks.SAKURA_PLANKS_KEY);
+        addDrop(ModBlocks.SPRING_GREEN_WOOL_KEY);
+        addDrop(ModBlocks.LAVENDER_PLANKS_KEY);
     }
 }

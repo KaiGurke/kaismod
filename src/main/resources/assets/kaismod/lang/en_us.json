@@ -33,5 +33,9 @@
     "item.kaismod.light_mangrove_sign" : "Light Mangrove Sign",
     "item.kaismod.light_mangrove_hanging_sign" : "Light Mangrove Hanging Sign",
     "item.kaismod.limestone" : "Limestone",
-    "item.kaismod.placeholder_mud_bricks" : "Placeholder Mud Bricks"
+    "item.kaismod.placeholder_mud_bricks" : "Placeholder Mud Bricks",
+    "item.kaismod.lavender_planks" : "Lavender Planks",
+    "item.kaismod.sakura_planks" : "Sakura Planks",
+    "item.kaismod.spring_green_wool" : "Spring Green Wool",
+    "item.kaismod.rose_wool" : "Rose Wool"
 }

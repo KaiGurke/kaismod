@@ -4,24 +4,8 @@ import com.kaigurke.kaismod.KaisMod;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSetType;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ButtonBlock;
-import net.minecraft.block.DoorBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.HangingSignBlock;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.SignBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.TrapdoorBlock;
-import net.minecraft.block.WallHangingSignBlock;
-import net.minecraft.block.WallSignBlock;
-import net.minecraft.block.WoodType;
+
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -47,217 +31,207 @@ public class ModBlocks {
 
 		return Registry.register(Registries.BLOCK, blockKey, block);
 	}
-	//--------------------
+
     // 	  WOOD TYPES
-	//--------------------
 
-	// ------------------------------------------------------------------------------------------------------------
-	// ----------------------------------------Kaigrove Blocks-----------------------------------------------------
-	// ------------------------------------------------------------------------------------------------------------
-
-    // Kaigrove Planks
-    public static final RegistryKey<Block> KAIGROVE_PLANKS = RegistryKey.of(
+	 // Green Mangrove
+    public static final RegistryKey<Block> GREEN_MANGROVE_PLANKS = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_planks")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_planks")
     );
 
-    public static final Block KAIGROVE_PLANKS_KEY = register(
-		    new Block(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS).registryKey(KAIGROVE_PLANKS).sounds(BlockSoundGroup.WOOD)),
-		    KAIGROVE_PLANKS,
+    public static final Block GREEN_MANGROVE_PLANKS_KEY = register(
+		    new Block(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS).registryKey(GREEN_MANGROVE_PLANKS).sounds(BlockSoundGroup.WOOD)),
+		    GREEN_MANGROVE_PLANKS,
 		    true
     );
-    // Kaigrove Log
-	public static final RegistryKey<Block> KAIGROVE_LOG = RegistryKey.of(
+
+	public static final RegistryKey<Block> GREEN_MANGROVE_LOG = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_log")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_log")
 	);
 
-	public static final Block KAIGROVE_LOG_KEY = register(
+	public static final Block GREEN_MANGROVE_LOG_KEY = register(
 		new PillarBlock(
 				AbstractBlock.Settings.copy(Blocks.MANGROVE_LOG)
-						.registryKey(KAIGROVE_LOG)
+						.registryKey(GREEN_MANGROVE_LOG)
 						.sounds(BlockSoundGroup.WOOD)
-		), KAIGROVE_LOG, true
+		), GREEN_MANGROVE_LOG, true
 	);
 
-	// Stripped Kaigrove Log
-	public static final RegistryKey<Block> STRIPPED_KAIGROVE_LOG = RegistryKey.of(
+	public static final RegistryKey<Block> STRIPPED_GREEN_MANGROVE_LOG = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "stripped_kaigrove_log")
+		Identifier.of(KaisMod.MOD_ID, "stripped_green_mangrove_log")
 	);
 
-	public static final Block STRIPPED_KAIGROVE_LOG_KEY = register(
+	public static final Block STRIPPED_GREEN_MANGROVE_LOG_KEY = register(
 		new PillarBlock(
 				AbstractBlock.Settings.copy(Blocks.STRIPPED_MANGROVE_LOG)
-						.registryKey(STRIPPED_KAIGROVE_LOG)
+						.registryKey(STRIPPED_GREEN_MANGROVE_LOG)
 						.sounds(BlockSoundGroup.WOOD)
-		), STRIPPED_KAIGROVE_LOG, true
+		), STRIPPED_GREEN_MANGROVE_LOG, true
 	);
 
-	// Kaigrove Stairs
-	public static final RegistryKey<Block> KAIGROVE_STAIRS = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_STAIRS = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_stairs")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_stairs")
     );
 
-	public static final Block KAIGROVE_STAIRS_KEY = register(
-			new StairsBlock(ModBlocks.KAIGROVE_PLANKS_KEY.getDefaultState(), AbstractBlock.Settings.copy(Blocks.MANGROVE_STAIRS).registryKey(KAIGROVE_STAIRS).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_STAIRS,
+	public static final Block GREEN_MANGROVE_STAIRS_KEY = register(
+			new StairsBlock(ModBlocks.GREEN_MANGROVE_PLANKS_KEY.getDefaultState(), AbstractBlock.Settings.copy(Blocks.MANGROVE_STAIRS).registryKey(GREEN_MANGROVE_STAIRS).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_STAIRS,
 			true
 	);
 
-	// Kaigrove Slab
-	public static final RegistryKey<Block> KAIGROVE_SLAB = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_SLAB = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_slab")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_slab")
     );
 
-	public static final Block KAIGROVE_SLAB_KEY = register(
-			new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_SLAB).registryKey(KAIGROVE_SLAB).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_SLAB,
+	public static final Block GREEN_MANGROVE_SLAB_KEY = register(
+			new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_SLAB).registryKey(GREEN_MANGROVE_SLAB).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_SLAB,
 			true
 	);
 
-	// Kaigrove Button
-	public static final RegistryKey<Block> KAIGROVE_BUTTON = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_BUTTON = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_button")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_button")
     );
 
-	public static final Block KAIGROVE_BUTTON_KEY = register(
-			new ButtonBlock(BlockSetType.MANGROVE, 10, AbstractBlock.Settings.copy(Blocks.MANGROVE_BUTTON).registryKey(KAIGROVE_BUTTON).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_BUTTON,
+	public static final Block GREEN_MANGROVE_BUTTON_KEY = register(
+			new ButtonBlock(BlockSetType.MANGROVE, 10, AbstractBlock.Settings.copy(Blocks.MANGROVE_BUTTON).registryKey(GREEN_MANGROVE_BUTTON).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_BUTTON,
 			true
 	);
 
-	// Kaigrove Pressure Plate
-	public static final RegistryKey<Block> KAIGROVE_PRESSURE_PLATE = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_PRESSURE_PLATE = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_pressure_plate")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_pressure_plate")
     );
 
-	public static final Block KAIGROVE_PRESSURE_PLATE_KEY = register(
-			new PressurePlateBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_PRESSURE_PLATE).registryKey(KAIGROVE_PRESSURE_PLATE).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_PRESSURE_PLATE,
+	public static final Block GREEN_MANGROVE_PRESSURE_PLATE_KEY = register(
+			new PressurePlateBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_PRESSURE_PLATE).registryKey(GREEN_MANGROVE_PRESSURE_PLATE).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_PRESSURE_PLATE,
 			true
 	);
 
 	// Kaigrove FENCE
-	public static final RegistryKey<Block> KAIGROVE_FENCE = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_FENCE = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_fence")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_fence")
     );
 
-	public static final Block KAIGROVE_FENCE_KEY = register(
-			new FenceBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_FENCE).registryKey(KAIGROVE_FENCE).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_FENCE,
+	public static final Block GREEN_MANGROVE_FENCE_KEY = register(
+			new FenceBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_FENCE).registryKey(GREEN_MANGROVE_FENCE).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_FENCE,
 			true
 	);
 
 	// Kaigrove FENCE GATE
-	public static final RegistryKey<Block> KAIGROVE_FENCE_GATE = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_FENCE_GATE = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_fence_gate")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_fence_gate")
     );
 
-	public static final Block KAIGROVE_FENCE_GATE_KEY = register(
-			new FenceGateBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_FENCE_GATE).registryKey(KAIGROVE_FENCE_GATE).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_FENCE_GATE,
+	public static final Block GREEN_MANGROVE_FENCE_GATE_KEY = register(
+			new FenceGateBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_FENCE_GATE).registryKey(GREEN_MANGROVE_FENCE_GATE).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_FENCE_GATE,
 			true
 	);
 
 	// Kaigrove Door
-	public static final RegistryKey<Block> KAIGROVE_DOOR = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_DOOR = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_door")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_door")
     );
 
-	public static final Block KAIGROVE_DOOR_KEY = register(
-			new DoorBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_DOOR).registryKey(KAIGROVE_DOOR).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_DOOR,
+	public static final Block GREEN_MANGROVE_DOOR_KEY = register(
+			new DoorBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_DOOR).registryKey(GREEN_MANGROVE_DOOR).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_DOOR,
 			true
 	);
 
 	// Kaigrove Trapdoor
-	public static final RegistryKey<Block> KAIGROVE_TRAPDOOR = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_TRAPDOOR = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_trapdoor")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_trapdoor")
     );
 
-	public static final Block KAIGROVE_TRAPDOOR_KEY = register(
-			new TrapdoorBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_TRAPDOOR).registryKey(KAIGROVE_TRAPDOOR).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_TRAPDOOR,
+	public static final Block GREEN_MANGROVE_TRAPDOOR_KEY = register(
+			new TrapdoorBlock(BlockSetType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_TRAPDOOR).registryKey(GREEN_MANGROVE_TRAPDOOR).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_TRAPDOOR,
 			true
 	);
 
 	// Kaigrove Sign
-	public static final RegistryKey<Block> KAIGROVE_SIGN = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_SIGN = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_sign")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_sign")
     );
 
-	public static final Block KAIGROVE_SIGN_KEY = register(
-			new SignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_SIGN).registryKey(KAIGROVE_SIGN).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_SIGN,
+	public static final Block GREEN_MANGROVE_SIGN_KEY = register(
+			new SignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_SIGN).registryKey(GREEN_MANGROVE_SIGN).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_SIGN,
 			true
 	);
 
 	// Kaigrove Wall Sign
-	public static final RegistryKey<Block> KAIGROVE_WALL_SIGN = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_WALL_SIGN = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_wall_sign")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_wall_sign")
 	);
 
-	public static final Block KAIGROVE_WALL_SIGN_KEY = register(
-		new WallSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_SIGN).registryKey(KAIGROVE_WALL_SIGN).sounds(BlockSoundGroup.WOOD)),
-		KAIGROVE_WALL_SIGN,
+	public static final Block GREEN_MANGROVE_WALL_SIGN_KEY = register(
+		new WallSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_SIGN).registryKey(GREEN_MANGROVE_WALL_SIGN).sounds(BlockSoundGroup.WOOD)),
+		GREEN_MANGROVE_WALL_SIGN,
 		false
 	);
 
 	// Kaigrove Hanging Sign
-	public static final RegistryKey<Block> KAIGROVE_HANGING_SIGN = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_HANGING_SIGN = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_hanging_sign")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_hanging_sign")
     );
 
-	public static final Block KAIGROVE_HANGING_SIGN_KEY = register(
-			new HangingSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_HANGING_SIGN).registryKey(KAIGROVE_HANGING_SIGN).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_HANGING_SIGN,
+	public static final Block GREEN_MANGROVE_HANGING_SIGN_KEY = register(
+			new HangingSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_HANGING_SIGN).registryKey(GREEN_MANGROVE_HANGING_SIGN).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_HANGING_SIGN,
 			true
 	);
 
 	// Kaigrove Wall Hanging Sign
-	public static final RegistryKey<Block> KAIGROVE_WALL_HANGING_SIGN = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_WALL_HANGING_SIGN = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_wall_hanging_sign")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_wall_hanging_sign")
 	);
 
-	public static final Block KAIGROVE_WALL_HANGING_SIGN_KEY = register(
-		new WallHangingSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_HANGING_SIGN).registryKey(KAIGROVE_WALL_HANGING_SIGN).sounds(BlockSoundGroup.WOOD)),
-		KAIGROVE_WALL_HANGING_SIGN,
+	public static final Block GREEN_MANGROVE_WALL_HANGING_SIGN_KEY = register(
+		new WallHangingSignBlock(WoodType.MANGROVE, AbstractBlock.Settings.copy(Blocks.MANGROVE_WALL_HANGING_SIGN).registryKey(GREEN_MANGROVE_WALL_HANGING_SIGN).sounds(BlockSoundGroup.WOOD)),
+		GREEN_MANGROVE_WALL_HANGING_SIGN,
 		false
 	);
 	// Kaigrove Wood
-	public static final RegistryKey<Block> KAIGROVE_WOOD = RegistryKey.of(
+	public static final RegistryKey<Block> GREEN_MANGROVE_WOOD = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "kaigrove_wood")
+		Identifier.of(KaisMod.MOD_ID, "green_mangrove_wood")
     );
 
-	public static final Block KAIGROVE_WOOD_KEY = register(
-			new PillarBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_WOOD).registryKey(KAIGROVE_WOOD).sounds(BlockSoundGroup.WOOD)),
-			KAIGROVE_WOOD,
+	public static final Block GREEN_MANGROVE_WOOD_KEY = register(
+			new PillarBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_WOOD).registryKey(GREEN_MANGROVE_WOOD).sounds(BlockSoundGroup.WOOD)),
+			GREEN_MANGROVE_WOOD,
 			true
 	);
 
 	// Stripped Kaigrove Wood
-	public static final RegistryKey<Block> STRIPPED_KAIGROVE_WOOD = RegistryKey.of(
+	public static final RegistryKey<Block> STRIPPED_GREEN_MANGROVE_WOOD = RegistryKey.of(
 		RegistryKeys.BLOCK,
-		Identifier.of(KaisMod.MOD_ID, "stripped_kaigrove_wood")
+		Identifier.of(KaisMod.MOD_ID, "stripped_green_mangrove_wood")
     );
 
-	public static final Block STRIPPED_KAIGROVE_WOOD_KEY = register(
-			new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_MANGROVE_WOOD).registryKey(STRIPPED_KAIGROVE_WOOD).sounds(BlockSoundGroup.WOOD)),
-			STRIPPED_KAIGROVE_WOOD,
+	public static final Block STRIPPED_GREEN_MANGROVE_WOOD_KEY = register(
+			new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_MANGROVE_WOOD).registryKey(STRIPPED_GREEN_MANGROVE_WOOD).sounds(BlockSoundGroup.WOOD)),
+			STRIPPED_GREEN_MANGROVE_WOOD,
 			true
 	);
 
@@ -482,11 +456,149 @@ public class ModBlocks {
 	);
 
 	public static final Block SAKURA_PLANKS_KEY = register(
-		    new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS).registryKey(SAKURA_PLANKS).sounds(BlockSoundGroup.CHERRY_WOOD)),
-		    SAKURA_PLANKS,
+		    new Block(
+				AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)
+					.registryKey(SAKURA_PLANKS)
+					.sounds(BlockSoundGroup.CHERRY_WOOD)
+			), SAKURA_PLANKS,
 		    true
 	);
 
+	public static final RegistryKey<Block> SAKURA_LOG = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_log")
+	);
+
+	public static final Block SAKURA_LOG_KEY = register(
+		new PillarBlock(
+				AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)
+						.registryKey(SAKURA_LOG)
+						.sounds(BlockSoundGroup.WOOD)
+		), SAKURA_LOG, true
+	);
+
+	public static final RegistryKey<Block> STRIPPED_SAKURA_LOG = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "stripped_sakura_log")
+	);
+
+	public static final Block STRIPPED_SAKURA_LOG_KEY = register(
+		new PillarBlock(
+				AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)
+						.registryKey(SAKURA_LOG)
+						.sounds(BlockSoundGroup.WOOD)
+		), STRIPPED_SAKURA_LOG, true
+	);
+
+public static final RegistryKey<Block> SAKURA_STAIRS = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_stairs")
+    );
+
+	public static final Block SAKURA_STAIRS_KEY = register(
+			new StairsBlock(ModBlocks.SAKURA_PLANKS_KEY.getDefaultState(), AbstractBlock.Settings.copy(Blocks.CHERRY_STAIRS).registryKey(GREEN_MANGROVE_STAIRS).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_STAIRS,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_SLAB = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_slab")
+    );
+
+	public static final Block SAKURA_SLAB_KEY = register(
+			new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_SLAB).registryKey(SAKURA_SLAB).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_SLAB,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_BUTTON = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_button")
+    );
+
+	public static final Block SAKURA_BUTTON_KEY = register(
+			new ButtonBlock(BlockSetType.CHERRY, 12, AbstractBlock.Settings.copy(Blocks.CHERRY_BUTTON).registryKey(SAKURA_BUTTON).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_BUTTON,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_PRESSURE_PLATE = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_pressure_plate")
+    );
+
+	public static final Block SAKURA_PRESSURE_PLATE_KEY = register(
+			new PressurePlateBlock(BlockSetType.CHERRY, AbstractBlock.Settings.copy(Blocks.CHERRY_PRESSURE_PLATE).registryKey(SAKURA_PRESSURE_PLATE).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_PRESSURE_PLATE,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_FENCE = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_fence")
+    );
+
+	public static final Block SAKURA_FENCE_KEY = register(
+			new FenceBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_FENCE).registryKey(SAKURA_FENCE).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_FENCE,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_FENCE_GATE = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_fence_gate")
+    );
+
+	public static final Block SAKURA_FENCE_GATE_KEY = register(
+			new FenceGateBlock(WoodType.CHERRY, AbstractBlock.Settings.copy(Blocks.CHERRY_FENCE_GATE).registryKey(SAKURA_FENCE_GATE).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_FENCE_GATE,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_DOOR = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_door")
+    );
+
+	public static final Block SAKURA_DOOR_KEY = register(
+			new DoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.copy(Blocks.CHERRY_DOOR).registryKey(SAKURA_DOOR).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_DOOR,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_TRAPDOOR = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_trapdoor")
+    );
+
+	public static final Block SAKURA_TRAPDOOR_KEY = register(
+			new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.copy(Blocks.CHERRY_TRAPDOOR).registryKey(SAKURA_TRAPDOOR).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_TRAPDOOR,
+			true
+	);
+
+	public static final RegistryKey<Block> SAKURA_WOOD = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "sakura_wood")
+    );
+
+	public static final Block SAKURA_WOOD_KEY = register(
+			new PillarBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_WOOD).registryKey(SAKURA_WOOD).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			SAKURA_WOOD,
+			true
+	);
+
+	public static final RegistryKey<Block> STRIPPED_SAKURA_WOOD = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "stripped_sakura_wood")
+    );
+
+	public static final Block STRIPPED_SAKURA_WOOD_KEY = register(
+			new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_CHERRY_WOOD).registryKey(STRIPPED_SAKURA_WOOD).sounds(BlockSoundGroup.CHERRY_WOOD)),
+			STRIPPED_SAKURA_WOOD,
+			true
+	);
 	// Lavender
 
 	// Lavender Planks
@@ -500,6 +612,8 @@ public class ModBlocks {
 		    LAVENDER_PLANKS,
 		    true
 	);
+
+	
 
 	// ----------------
 	// 	Stone Types
@@ -557,26 +671,26 @@ public class ModBlocks {
     public static void initialize() {
         KaisMod.LOGGER.info("Registering mod blocks for " + KaisMod.MOD_ID);
 
-		StrippableBlockRegistry.register(KAIGROVE_LOG_KEY, STRIPPED_KAIGROVE_LOG_KEY);
-		StrippableBlockRegistry.register(KAIGROVE_WOOD_KEY, STRIPPED_KAIGROVE_WOOD_KEY);
+		StrippableBlockRegistry.register(GREEN_MANGROVE_LOG_KEY, STRIPPED_GREEN_MANGROVE_LOG_KEY);
+		StrippableBlockRegistry.register(GREEN_MANGROVE_WOOD_KEY, STRIPPED_GREEN_MANGROVE_WOOD_KEY);
 		StrippableBlockRegistry.register(LIGHT_MANGROVE_LOG_KEY, STRIPPED_LIGHT_MANGROVE_LOG_KEY);
 		StrippableBlockRegistry.register(LIGHT_MANGROVE_WOOD_KEY, STRIPPED_LIGHT_MANGROVE_WOOD_KEY);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
 			// Kaigrove
-            entries.add(KAIGROVE_LOG_KEY.asItem());
-			entries.add(STRIPPED_KAIGROVE_LOG_KEY.asItem());
-			entries.add(KAIGROVE_WOOD_KEY.asItem());
-			entries.add(STRIPPED_KAIGROVE_WOOD_KEY.asItem());
-			entries.add(KAIGROVE_PLANKS_KEY.asItem());
-			entries.add(KAIGROVE_STAIRS_KEY.asItem());
-			entries.add(KAIGROVE_SLAB_KEY.asItem());
-			entries.add(KAIGROVE_FENCE_KEY.asItem());
-			entries.add(KAIGROVE_FENCE_GATE_KEY.asItem());
-			entries.add(KAIGROVE_DOOR_KEY.asItem());
-			entries.add(KAIGROVE_TRAPDOOR_KEY.asItem());
-			entries.add(KAIGROVE_PRESSURE_PLATE_KEY.asItem());
-			entries.add(KAIGROVE_BUTTON_KEY.asItem());
+            entries.add(GREEN_MANGROVE_LOG_KEY.asItem());
+			entries.add(STRIPPED_GREEN_MANGROVE_LOG_KEY.asItem());
+			entries.add(GREEN_MANGROVE_WOOD_KEY.asItem());
+			entries.add(STRIPPED_GREEN_MANGROVE_WOOD_KEY.asItem());
+			entries.add(GREEN_MANGROVE_PLANKS_KEY.asItem());
+			entries.add(GREEN_MANGROVE_STAIRS_KEY.asItem());
+			entries.add(GREEN_MANGROVE_SLAB_KEY.asItem());
+			entries.add(GREEN_MANGROVE_FENCE_KEY.asItem());
+			entries.add(GREEN_MANGROVE_FENCE_GATE_KEY.asItem());
+			entries.add(GREEN_MANGROVE_DOOR_KEY.asItem());
+			entries.add(GREEN_MANGROVE_TRAPDOOR_KEY.asItem());
+			entries.add(GREEN_MANGROVE_PRESSURE_PLATE_KEY.asItem());
+			entries.add(GREEN_MANGROVE_BUTTON_KEY.asItem());
 			
 			// Light Mangrove
 			entries.add(LIGHT_MANGROVE_LOG_KEY.asItem());
@@ -605,9 +719,9 @@ public class ModBlocks {
         });
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
-			entries.add(KAIGROVE_SIGN_KEY.asItem());
+			entries.add(GREEN_MANGROVE_SIGN_KEY.asItem());
             entries.add(LIGHT_MANGROVE_SIGN_KEY.asItem());
-			entries.add(KAIGROVE_HANGING_SIGN_KEY.asItem());
+			entries.add(GREEN_MANGROVE_HANGING_SIGN_KEY.asItem());
 			entries.add(LIGHT_MANGROVE_HANGING_SIGN_KEY.asItem());
         });
 

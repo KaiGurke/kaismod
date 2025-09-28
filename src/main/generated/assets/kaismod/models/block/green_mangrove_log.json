@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kaismod:block/green_mangrove_log_top",
+    "side": "kaismod:block/green_mangrove_log"
+  }
+}

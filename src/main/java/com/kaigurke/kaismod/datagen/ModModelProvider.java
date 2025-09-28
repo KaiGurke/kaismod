@@ -28,20 +28,32 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerDoor(ModBlocks.LIGHT_MANGROVE_DOOR_KEY);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.LIGHT_MANGROVE_TRAPDOOR_KEY);
 
-        blockStateModelGenerator.registerLog(ModBlocks.KAIGROVE_LOG_KEY).log(ModBlocks.KAIGROVE_LOG_KEY).wood(ModBlocks.KAIGROVE_WOOD_KEY);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_KAIGROVE_LOG_KEY).log(ModBlocks.STRIPPED_KAIGROVE_LOG_KEY).wood(ModBlocks.STRIPPED_KAIGROVE_WOOD_KEY);
+        blockStateModelGenerator.registerLog(ModBlocks.GREEN_MANGROVE_LOG_KEY).log(ModBlocks.GREEN_MANGROVE_LOG_KEY).wood(ModBlocks.GREEN_MANGROVE_WOOD_KEY);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GREEN_MANGROVE_LOG_KEY).log(ModBlocks.STRIPPED_GREEN_MANGROVE_LOG_KEY).wood(ModBlocks.STRIPPED_GREEN_MANGROVE_WOOD_KEY);
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KAIGROVE_PLANKS_KEY)
-        .stairs(ModBlocks.KAIGROVE_STAIRS_KEY)
-        .slab(ModBlocks.KAIGROVE_SLAB_KEY)
-        .fence(ModBlocks.KAIGROVE_FENCE_KEY)
-        .fenceGate(ModBlocks.KAIGROVE_FENCE_GATE_KEY)
-        .button(ModBlocks.KAIGROVE_BUTTON_KEY)
-        .pressurePlate(ModBlocks.KAIGROVE_PRESSURE_PLATE_KEY);
-        blockStateModelGenerator.registerDoor(ModBlocks.KAIGROVE_DOOR_KEY);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.KAIGROVE_TRAPDOOR_KEY);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GREEN_MANGROVE_PLANKS_KEY)
+        .stairs(ModBlocks.GREEN_MANGROVE_STAIRS_KEY)
+        .slab(ModBlocks.GREEN_MANGROVE_SLAB_KEY)
+        .fence(ModBlocks.GREEN_MANGROVE_FENCE_KEY)
+        .fenceGate(ModBlocks.GREEN_MANGROVE_FENCE_GATE_KEY)
+        .button(ModBlocks.GREEN_MANGROVE_BUTTON_KEY)
+        .pressurePlate(ModBlocks.GREEN_MANGROVE_PRESSURE_PLATE_KEY);
+        blockStateModelGenerator.registerDoor(ModBlocks.GREEN_MANGROVE_DOOR_KEY);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.GREEN_MANGROVE_TRAPDOOR_KEY);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAKURA_PLANKS_KEY);
+        blockStateModelGenerator.registerLog(ModBlocks.SAKURA_LOG_KEY).log(ModBlocks.SAKURA_LOG_KEY).wood(ModBlocks.SAKURA_WOOD_KEY);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SAKURA_LOG_KEY).log(ModBlocks.STRIPPED_SAKURA_LOG_KEY).wood(ModBlocks.STRIPPED_SAKURA_WOOD_KEY);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SAKURA_PLANKS_KEY)
+        .stairs(ModBlocks.SAKURA_STAIRS_KEY)
+        .slab(ModBlocks.SAKURA_SLAB_KEY)
+        .fence(ModBlocks.SAKURA_FENCE_KEY)
+        .fenceGate(ModBlocks.SAKURA_FENCE_GATE_KEY)
+        .button(ModBlocks.SAKURA_BUTTON_KEY)
+        .pressurePlate(ModBlocks.SAKURA_PRESSURE_PLATE_KEY);
+        blockStateModelGenerator.registerDoor(ModBlocks.SAKURA_DOOR_KEY);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.SAKURA_TRAPDOOR_KEY);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDER_PLANKS_KEY);
         
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLACEHOLDER_MUD_BRICKS_KEY);

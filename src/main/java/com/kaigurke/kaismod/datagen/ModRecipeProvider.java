@@ -23,14 +23,14 @@ public class ModRecipeProvider extends FabricRecipeProvider{
 			@Override
 			public void generate() {
 				// Recipes for Kaigrove Planks
-				createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.KAIGROVE_PLANKS_KEY, 4)
-					.input(ModBlocks.KAIGROVE_LOG_KEY)
-					.criterion(hasItem(ModBlocks.KAIGROVE_LOG_KEY), conditionsFromItem(ModBlocks.KAIGROVE_LOG_KEY))
+				createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_MANGROVE_PLANKS_KEY, 4)
+					.input(ModBlocks.GREEN_MANGROVE_LOG_KEY)
+					.criterion(hasItem(ModBlocks.GREEN_MANGROVE_LOG_KEY), conditionsFromItem(ModBlocks.GREEN_MANGROVE_LOG_KEY))
 					.offerTo(exporter);
 
 				// Button recipe for Kaigrove Planks
-				createButtonRecipe(ModBlocks.KAIGROVE_BUTTON_KEY, Ingredient.ofItems(ModBlocks.KAIGROVE_PLANKS_KEY))
-					.criterion(hasItem(ModBlocks.KAIGROVE_PLANKS_KEY), conditionsFromItem(ModBlocks.KAIGROVE_PLANKS_KEY))
+				createButtonRecipe(ModBlocks.GREEN_MANGROVE_BUTTON_KEY, Ingredient.ofItems(ModBlocks.GREEN_MANGROVE_PLANKS_KEY))
+					.criterion(hasItem(ModBlocks.GREEN_MANGROVE_PLANKS_KEY), conditionsFromItem(ModBlocks.GREEN_MANGROVE_PLANKS_KEY))
 					.offerTo(exporter);
 
 				// Recipes for Light Mangrove Planks

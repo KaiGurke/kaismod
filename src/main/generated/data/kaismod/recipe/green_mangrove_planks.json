@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "kaismod:green_mangrove_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "kaismod:green_mangrove_planks"
+  }
+}

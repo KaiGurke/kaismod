@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kaismod:block/sakura_slab"
+    },
+    "type=double": {
+      "model": "kaismod:block/sakura_planks"
+    },
+    "type=top": {
+      "model": "kaismod:block/sakura_slab_top"
+    }
+  }
+}

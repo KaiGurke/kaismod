@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kaismod:block/green_mangrove_slab"
+    },
+    "type=double": {
+      "model": "kaismod:block/green_mangrove_planks"
+    },
+    "type=top": {
+      "model": "kaismod:block/green_mangrove_slab_top"
+    }
+  }
+}

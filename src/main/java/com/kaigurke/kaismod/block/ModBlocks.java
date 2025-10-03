@@ -688,6 +688,17 @@ public static final RegistryKey<Block> SAKURA_STAIRS = RegistryKey.of(
 		true
 	);
 
+	public static final RegistryKey<Block> TILES_BLOCK = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "tiles_block")
+	);
+
+	public static final Block TILES_BLOCK_KEY = register(
+		new Block(AbstractBlock.Settings.copy(Blocks.STONE).registryKey(TILES_BLOCK).sounds(BlockSoundGroup.STONE)),
+		TILES_BLOCK,
+		true
+	);
+
     public static void initialize() {
         KaisMod.LOGGER.info("Registering mod blocks for " + KaisMod.MOD_ID);
 
@@ -748,6 +759,7 @@ public static final RegistryKey<Block> SAKURA_STAIRS = RegistryKey.of(
 			entries.add(LAVENDER_PLANKS_KEY.asItem());
 
 			// Other
+			entries.add(TILES_BLOCK_KEY.asItem());
 			entries.add(LIMESTONE_KEY.asItem());
 			entries.add(PLACEHOLDER_MUD_BRICKS_KEY.asItem());
         });

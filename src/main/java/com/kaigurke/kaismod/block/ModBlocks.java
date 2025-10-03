@@ -1,14 +1,13 @@
 package com.kaigurke.kaismod.block;
 
 import com.kaigurke.kaismod.KaisMod;
+import com.kaigurke.kaismod.item.ModItems;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -666,7 +665,28 @@ public static final RegistryKey<Block> SAKURA_STAIRS = RegistryKey.of(
 		ROSE_WOOL,
 		true
 	);
+	//DEV BLOCKS
+	public static final RegistryKey<Block> ORANGE_PLACEHOLDER = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "orange_placeholder")
+	);
 
+	public static final Block ORANGE_PLACEHOLDER_KEY = register(
+		new Block(AbstractBlock.Settings.copy(Blocks.BEDROCK).registryKey(ORANGE_PLACEHOLDER).sounds(BlockSoundGroup.STONE)),
+		ORANGE_PLACEHOLDER,
+		true
+	);
+
+	public static final RegistryKey<Block> GREYBOX_PLACEHOLDER = RegistryKey.of(
+		RegistryKeys.BLOCK,
+		Identifier.of(KaisMod.MOD_ID, "greybox_placeholder")
+	);
+
+	public static final Block GREYBOX_PLACEHOLDER_KEY = register(
+		new Block(AbstractBlock.Settings.copy(Blocks.BEDROCK).registryKey(GREYBOX_PLACEHOLDER).sounds(BlockSoundGroup.STONE)),
+		GREYBOX_PLACEHOLDER,
+		true
+	);
 
     public static void initialize() {
         KaisMod.LOGGER.info("Registering mod blocks for " + KaisMod.MOD_ID);
@@ -675,6 +695,8 @@ public static final RegistryKey<Block> SAKURA_STAIRS = RegistryKey.of(
 		StrippableBlockRegistry.register(GREEN_MANGROVE_WOOD_KEY, STRIPPED_GREEN_MANGROVE_WOOD_KEY);
 		StrippableBlockRegistry.register(LIGHT_MANGROVE_LOG_KEY, STRIPPED_LIGHT_MANGROVE_LOG_KEY);
 		StrippableBlockRegistry.register(LIGHT_MANGROVE_WOOD_KEY, STRIPPED_LIGHT_MANGROVE_WOOD_KEY);
+		StrippableBlockRegistry.register(SAKURA_LOG_KEY, STRIPPED_SAKURA_LOG_KEY);
+		StrippableBlockRegistry.register(SAKURA_WOOD_KEY, STRIPPED_SAKURA_WOOD_KEY);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
 			// Kaigrove
@@ -708,7 +730,19 @@ public static final RegistryKey<Block> SAKURA_STAIRS = RegistryKey.of(
 			entries.add(LIGHT_MANGROVE_BUTTON_KEY.asItem());
 
 			// Sakura
+			entries.add(SAKURA_LOG_KEY.asItem());
+			entries.add(STRIPPED_SAKURA_LOG_KEY.asItem());
+			entries.add(SAKURA_WOOD_KEY.asItem());
+			entries.add(STRIPPED_SAKURA_WOOD_KEY.asItem());
 			entries.add(SAKURA_PLANKS_KEY.asItem());
+			entries.add(SAKURA_STAIRS_KEY.asItem());
+			entries.add(SAKURA_SLAB_KEY.asItem());
+			entries.add(SAKURA_FENCE_KEY.asItem());
+			entries.add(SAKURA_FENCE_GATE_KEY.asItem());
+			entries.add(SAKURA_DOOR_KEY.asItem());
+			entries.add(SAKURA_TRAPDOOR_KEY.asItem());
+			entries.add(SAKURA_PRESSURE_PLATE_KEY.asItem());
+			entries.add(SAKURA_BUTTON_KEY.asItem());
 			
 			// Lavender
 			entries.add(LAVENDER_PLANKS_KEY.asItem());
@@ -729,6 +763,10 @@ public static final RegistryKey<Block> SAKURA_STAIRS = RegistryKey.of(
 			entries.add(SPRING_GREEN_WOOL_KEY.asItem());
 			entries.add(ROSE_WOOL_KEY.asItem());
 		});
+
+		ItemGroupEvents.modifyEntriesEvent(ModItems.KAISMOD_BLOCKS_GROUP_KEY).register(entries -> {
+            entries.add(GREYBOX_PLACEHOLDER_KEY.asItem());
+        });
     }
 
 }

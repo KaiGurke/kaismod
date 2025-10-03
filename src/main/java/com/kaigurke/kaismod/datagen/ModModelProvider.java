@@ -60,6 +60,9 @@ public class ModModelProvider extends FabricModelProvider{
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIMESTONE_KEY);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROSE_WOOL_KEY);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPRING_GREEN_WOOL_KEY);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_PLACEHOLDER_KEY);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREYBOX_PLACEHOLDER_KEY);
     }
 
     @Override
